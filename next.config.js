@@ -9,6 +9,10 @@ const nextConfig = {
   future: {
     webpack5: true,
   },
+  sassOptions: {
+    includePaths: ['./styles'],
+    prependData: `@import "mixins"; @import "variables";`,
+  },
 }
 
 module.exports = nextConfig
