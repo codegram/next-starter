@@ -5,6 +5,7 @@ module.exports = {
     'stylelint-prettier/recommended',
   ],
   plugins: ['stylelint-prettier'],
+  ignoreFiles: ['**/*.jsx', '**/*.tsx', '**/*.json', 'node_modules/**/*'],
   rules: {
     'prettier/prettier': true,
     'at-rule-empty-line-before': [

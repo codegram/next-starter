@@ -7,8 +7,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "lint:js": "eslint --ignore-path .gitignore .",
+    "lint:style": "stylelint **/*.{scss,css} --ignore-path .gitignore",
     "lint": "npm run lint:js && npm run lint:style",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -16,13 +16,7 @@
   "dependencies": {
     "next": "10.2.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "engines": {
-    "node": ">=15 <16",
-    "npm": ">=7 <8"
-  },
-  "devDependencies": {
+    "react-dom": "17.0.2",
     "@babel/core": "^7.14.5",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
@@ -34,17 +28,27 @@
     "@typescript-eslint/eslint-plugin": "^4.26.1",
     "@typescript-eslint/parser": "^4.26.1",
     "babel-loader": "^8.2.2",
+    "typescript": "^4.3.2"
+  },
+  "engines": {
+    "node": ">=16 <17",
+    "npm": ">=7 <8"
+  },
+  "devDependencies": {
     "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-prettier": "^1.2.0",
-    "typescript": "^4.3.2",
     "typescript-eslint": "^0.0.1-alpha.0"
   }
 }

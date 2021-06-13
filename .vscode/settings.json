@@ -5,6 +5,12 @@
     "source.fixAll": true
   },
   "eslint.validate": ["javascript"],
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
   "stylelint.enable": true,
   "css.validate": false,
   "less.validate": false,
