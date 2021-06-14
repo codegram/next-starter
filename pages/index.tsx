@@ -1,6 +1,7 @@
 import { ReactElement } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Button } from '@/components/Button'
 import styles from './Home.module.scss'
 
 export default function Home(): ReactElement {
@@ -16,6 +17,8 @@ export default function Home(): ReactElement {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <Button label="A starter by Codegram" primary />
 
         <p className={styles.description}>
           Get started by editing{' '}

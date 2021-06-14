@@ -6,6 +6,9 @@ module.exports = {
   },
   settings: {
     react: { version: 'detect' },
+    'import/resolver': {
+      typescript: {},
+    },
   },
   extends: [
     'airbnb',
@@ -45,7 +48,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['stories/**/*'], // Or *.test.js
+      files: ['**/*.stories.*'], // Or *.test.js
       rules: {
         'react/jsx-props-no-spreading': 'off',
       },

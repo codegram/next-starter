@@ -7,11 +7,10 @@ const nextConfig = {
   /* config options here */
   experimental: {},
   future: {
-    webpack5: true,
+    webpack5: false,
   },
   sassOptions: {
-    includePaths: ['./styles'],
-    prependData: `@import "mixins"; @import "variables";`,
+    prependData: `@import "styles/variables"; @import "styles/mixins";`,
   },
 }
 
