@@ -6,7 +6,7 @@
     "dockerfile": "Dockerfile",
     // Update 'VARIANT' to pick a Node version: 12, 14, 16
     "args": {
-      "VARIANT": "15"
+      "VARIANT": "16"
     }
   },
 
@@ -24,7 +24,7 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "nvm install && npm install",
+  "postCreateCommand": "bash -i -c 'nvm install && npm install'",
 
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node"
