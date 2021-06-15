@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Button } from '@/components/Button'
-import styles from './Home.module.scss'
+import styles from './index.module.scss'
 
 export default function Home(): ReactElement {
   return (
