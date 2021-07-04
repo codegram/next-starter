@@ -5,6 +5,7 @@
  * */
 const nextConfig = {
   /* config options here */
+  target: 'serverless',
   distDir: 'dist',
   experimental: {},
   future: {
