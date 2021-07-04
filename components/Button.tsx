@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import styles from './Button.module.scss'
 
 export interface ButtonProps {
@@ -32,17 +33,14 @@ export const Button: React.FC<ButtonProps> = ({
   backgroundColor,
   label,
 }) => {
-  const mode = primary
-    ? styles['storybook-button--primary']
-    : styles['storybook-button--secondary']
   return (
     <button
       type="button"
-      className={[
-        styles['storybook-button'],
-        styles[`storybook-button--${size}`],
-        mode,
-      ].join(' ')}
+      className={classNames(
+        styles.button,
+        styles[`button--${size}`],
+        styles[`button--${primary ? 'primary' : 'secondary'}`]
+      )}
       style={{ backgroundColor }}
     >
       {label}
