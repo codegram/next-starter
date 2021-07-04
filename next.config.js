@@ -5,6 +5,7 @@
  * */
 const nextConfig = {
   /* config options here */
+  distDir: 'dist',
   experimental: {},
   future: {
     webpack5: false,
