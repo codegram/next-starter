@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Relevant URLs
+
+- **Deployment**: https://codegram-next-starter.netlify.app
+- **Storybook**: https://codegram.github.io/next-starter
+
 ## Getting Started
 
 _Note_: You might need to install dependencies like this, as there's issues with Storybook and Webpack 5:
