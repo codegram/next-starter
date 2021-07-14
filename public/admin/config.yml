@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: codegram/next-starter
   branch: feat/add-netlify-cms
 media_folder: public/img
 public_folder: img
