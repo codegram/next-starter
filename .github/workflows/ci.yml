@@ -35,8 +35,16 @@ jobs:
           path: ${{ github.workspace }}/.next/cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}
 
+      - name: e2e cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ github.workspace }}/e2e/node_modules
+          key: ${{ runner.os }}-e2e-node_modules-${{ hashFiles('**/package-lock.json') }}
+
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci
+        run: |
+          npm ci
+          cd e2e && npm ci
 
       - name: Run linter 👀
         run: |
@@ -67,4 +75,25 @@ jobs:
       - name: Run E2E Tests 🧪
         run: |
           npx serve out &
-          npm run test:e2e:ci
+          cd e2e && npm run test:e2e:ci
+
+      - name: Upload artifacts (screenshots) 📸
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress screenshots
+          path: e2e/cypress/screenshots/
+
+      - name: Upload artifacts (videos) 📹
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress videos
+          path: e2e/cypress/videos/
+
+      - name: Upload artifacts (downloads) 📥
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress downloads
+          path: e2e/cypress/downloads/
