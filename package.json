@@ -6,7 +6,6 @@
     "dev": "next dev --port 5000",
     "build": "next build",
     "export": "next export",
-    "generate": "npm run build && npm run export",
     "start": "next start",
     "lint:js": "eslint --ignore-path .eslintignore .",
     "lint:style": "stylelint **/*.{scss,css} --ignore-path .gitignore",
