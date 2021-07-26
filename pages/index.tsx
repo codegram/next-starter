@@ -1,7 +1,7 @@
 import { ReactElement } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Button } from '@/components/Button'
+import { Button } from '@/components'
 import { attributes, react as HomeContent } from '../content/home.md'
 import styles from './index.module.scss'
 
