@@ -48,6 +48,8 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': ['error'],
     'import/extensions': 'off',
     'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'import/no-anonymous-default-export': 'off',
   },
   overrides: [
     {
