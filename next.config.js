@@ -14,6 +14,10 @@ const nextConfig = {
   sassOptions: {
     prependData: `@import "styles/variables"; @import "styles/mixins";`,
   },
+  images: {
+    loader: 'imgix',
+    path: 'https://noop/',
+  },
   webpack: (cfg) => {
     cfg.module.rules.push({
       test: /\.md$/,
