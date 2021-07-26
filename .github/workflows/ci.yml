@@ -39,7 +39,9 @@ jobs:
         run: npm ci
 
       - name: Run linter 👀
-        run: npm run lint
+        run: |
+          npm run lint
+          cd e2e && npm run lint
 
       - name: Build ⚙️
         run: npm run build
