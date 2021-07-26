@@ -54,6 +54,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./storybook-static
 
+      - name: Run Unit Tests 🧪
+        run: npm run test
+
       - name: Generate ⚙️
         run: npm run generate
 
