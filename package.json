@@ -12,7 +12,9 @@
     "lint:style": "stylelint **/*.{scss,css} --ignore-path .gitignore",
     "lint": "npm run lint:js && npm run lint:style",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@babel/core": "^7.14.8",
@@ -47,8 +49,10 @@
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^3.7.1",
+    "@testing-library/react": "^12.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.4",
     "@typescript-eslint/parser": "^4.28.4",
+    "babel-jest": "^27.0.6",
     "eslint": "^7.31.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "^11.0.1",
@@ -60,6 +64,7 @@
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "frontmatter-markdown-loader": "^3.6.3",
+    "jest": "^27.0.6",
     "prettier": "^2.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
