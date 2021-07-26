@@ -1,0 +1,18 @@
+/node_modules
+/e2e
+
+# next.js
+/.next/
+/out/
+
+# testing
+/coverage
+
+# vercel
+.vercel
+
+# build
+dist
+
+# storybook
+storybook-static

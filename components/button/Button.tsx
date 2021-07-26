@@ -32,6 +32,7 @@ export const Button: React.FC<ButtonProps> = ({
   size = 'medium',
   backgroundColor,
   label,
+  onClick,
 }) => {
   return (
     <button
@@ -42,6 +43,7 @@ export const Button: React.FC<ButtonProps> = ({
         styles[`button--${primary ? 'primary' : 'secondary'}`]
       )}
       style={{ backgroundColor }}
+      onClick={onClick}
     >
       {label}
     </button>
