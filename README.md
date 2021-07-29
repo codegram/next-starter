@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 This project has different variants depending on your needs:
 
 - [Main variant](https://github.com/codegram/next-starter/tree/main)
-- [With Prismic & GraphQL](https://github.com/codegram/next-starter/variant/prismic/)
+- [With Prismic & GraphQL](https://github.com/codegram/next-starter/tree/variant/prismic)
 
 ## Relevant URLs
 
