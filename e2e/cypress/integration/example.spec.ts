@@ -2,7 +2,7 @@ describe('Home', () => {
   it('works', () => {
     cy.visit('/')
     cy.get('main').within(() => {
-      cy.findByText('Awesome kitties').should('be.visible')
+      cy.findByText('Home Page from Prismic').should('be.visible')
     })
   })
 })

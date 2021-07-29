@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Variants
+
+This project has different variants depending on your needs:
+
+- [Main variant](https://github.com/codegram/next-starter/tree/main)
+- [With Prismic & GraphQL](https://github.com/codegram/next-starter/variant/prismic/)
+
 ## Relevant URLs
 
 - **Deployment**: https://codegram-next-starter.netlify.app
@@ -35,6 +42,18 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## GraphQL Codegen
+
+This project uses [GraphQL Code Generator](https://www.graphql-code-generator.com/), which will generate TypeScript types automatically from the API endpoint.
+
+Types need to be regenerated whenever there's a change. This is easily doable by calling the following command:
+
+```
+$ npm run graphql-codegen
+```
+
+**Note**: Types also need to be regenerated whenever any `.graphql` file gets changed.
 
 ## Deploy on Vercel
 
