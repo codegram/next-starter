@@ -1,3 +1,6 @@
+# Note: In order for this action to run, you need to install this app
+# on your repository first: https://github.com/apps/dependabot-merge-action
+
 name: Dependabot automerge
 
 on:
@@ -7,8 +10,6 @@ jobs:
   auto-merge:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - uses: fastify/github-action-merge-dependabot@v2.1.1
         with:
-          target: minor
-          github-token: ${{ secrets.DEPENDABOT_AUTOMERGE_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
