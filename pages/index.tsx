@@ -38,7 +38,7 @@ export default function Home({ title }: HomeProps): ReactElement {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>{title}</h1>
+        <h1 className={styles.title}>{RichText.asText(title)}</h1>
 
         <Button label="A starter by Codegram" primary />
       </main>
