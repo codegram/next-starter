@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Variants
+
+This project has different variants depending on your needs:
+
+- [Main variant](https://github.com/codegram/next-starter/tree/main)
+- [With Prismic & GraphQL](https://github.com/codegram/next-starter/variant/prismic/)
+
 ## Relevant URLs
 
 - **Deployment**: https://codegram-next-starter.netlify.app
