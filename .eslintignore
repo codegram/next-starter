@@ -16,3 +16,4 @@ dist
 
 # storybook
 storybook-static
+graphql/types.ts 

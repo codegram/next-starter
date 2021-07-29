@@ -1,0 +1,9 @@
+query IndexPage {
+  allHomepages {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}

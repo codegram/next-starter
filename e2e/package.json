@@ -12,6 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@testing-library/cypress": "^8.0.0",
+    "@types/jest": "^26.0.24",
+    "@types/testing-library__cypress": "^5.0.9",
     "cypress": "^8.0.0",
     "eslint": "^7.31.0",
     "eslint-plugin-cypress": "^2.11.3",
