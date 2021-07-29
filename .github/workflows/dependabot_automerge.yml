@@ -1,3 +1,6 @@
+# Note: In order for this action to run, you need to install this app
+# on your repository first: https://github.com/apps/dependabot-merge-action
+
 name: Dependabot automerge
 
 on:
