@@ -2,6 +2,8 @@ name: ci
 
 on:
   push:
+    - main
+    - variant/prismic
   pull_request:
 
 jobs:
