@@ -2,9 +2,13 @@ name: e2e
 
 on:
   push:
-    - main
-    - variant/prismic
+    branches:
+      - main
+      - variant/prismic
   pull_request:
+    branches:
+      - main
+      - variant/prismic
 
 jobs:
   e2e:

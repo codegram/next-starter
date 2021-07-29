@@ -2,9 +2,13 @@ name: ci
 
 on:
   push:
-    - main
-    - variant/prismic
+    branches:
+      - main
+      - variant/prismic
   pull_request:
+    branches:
+      - main
+      - variant/prismic
 
 jobs:
   ci:
