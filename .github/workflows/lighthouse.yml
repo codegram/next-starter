@@ -43,7 +43,8 @@ jobs:
       - name: Build ⚙️
         run: npm run build
 
-      - run: lhci autorun
+      - name: Run Lighthouse Audit 🔦
+        run: lhci autorun
         env:
           LHCI_GITHUB_TOKEN: ${{ secrets.LHCI_GITHUB_TOKEN }}
           PORT: 5000
