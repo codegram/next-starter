@@ -16,7 +16,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@babel/core": "^7.15.4",
+    "@babel/core": "^7.15.5",
     "@storybook/addon-a11y": "^6.3.7",
     "@storybook/addon-actions": "^6.3.8",
     "@storybook/addon-essentials": "^6.3.7",
