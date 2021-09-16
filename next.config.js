@@ -25,7 +25,7 @@ const nextConfig = {
   },
   images: {
     loader: 'custom',
-    path: '/',
+    path: process.env.BASE_PATH || '/',
     deviceSizes: [320, 480, 768, 1024, 1280, 1440, 1600, 1920, 2048],
     imageSizes: [320, 480, 768, 1024, 1280, 1440, 1600, 1920, 2048],
   },
