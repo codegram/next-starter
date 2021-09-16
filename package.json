@@ -13,7 +13,8 @@
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@babel/core": "^7.15.5",
