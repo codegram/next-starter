@@ -13,13 +13,12 @@ const securityHeaders = [
 ]
 
 /**
- * @type {import('next/dist/next-server/server/config').NextConfig}
+ * @type {import('next/dist/server/config').NextConfig}
  * */
 const nextConfig = {
   /* config options here */
   target: 'serverless',
   distDir: 'dist',
-  experimental: {},
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
   },
