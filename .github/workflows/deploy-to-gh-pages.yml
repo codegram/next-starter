@@ -10,7 +10,7 @@ jobs:
   ci:
     runs-on: ${{ matrix.os }}
     env:
-      BASE_PATH: /next-starter/
+      BASE_PATH: /next-starter
 
     strategy:
       matrix:
