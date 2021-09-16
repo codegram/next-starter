@@ -1,8 +1,10 @@
 import { ReactElement } from 'react'
 import Head from 'next/head'
+import Image from '@/components/Image'
 import { Button } from '@/components/elements/Button'
 import { attributes, react as HomeContent } from '../content/home.md'
 import styles from './index.module.scss'
+import logo from '@/public/images/logo.jpeg'
 
 export default function Home(): ReactElement {
   const { title, items } = attributes
@@ -16,12 +18,10 @@ export default function Home(): ReactElement {
       </Head>
 
       <main className={styles.main}>
+        <Image src={logo} alt="Codegram's logo" />
         <h1 className={styles.title}>{title}</h1>
-
         <Button label="A starter by Codegram" primary />
-
         <HomeContent />
-
         <ul>
           {items.map((item) => (
             <li key={item.name}>
