@@ -11,7 +11,7 @@ function CustomImage(props: ImageProps): JSX.Element {
   if (typeof src === 'object' && 'src' in src) {
     url = {
       ...src,
-      src: `${process.env.basePath}${src.src}`,
+      src: `${process.env.basePath || ''}${src.src}`,
     }
   }
 
