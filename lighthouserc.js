@@ -10,7 +10,7 @@ module.exports = {
       assertions: {
         'categories:performance': ['warn', { minScore: 0.9 }],
         'categories:accessibility': ['error', { minScore: 0.95 }],
-        'categories:best-practices': ['error', { minScore: 0.95 }],
+        'categories:best-practices': ['error', { minScore: 0.9 }],
         'categories:seo': ['error', { minScore: 0.95 }],
         'uses-text-compression': 'off',
         'csp-xss': 'off',
@@ -27,6 +27,7 @@ module.exports = {
           'warn',
           { minScore: 0.3, aggregationMethod: 'optimistic' },
         ],
+        'image-size-responsive': ['warn', { minScore: 0.9 }],
         'largest-contentful-paint': [
           'warn',
           { minScore: 0.5, aggregationMethod: 'optimistic' },

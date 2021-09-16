@@ -23,8 +23,8 @@
       "@/components": [
         "components"
       ],
-      "@/components/*": [
-        "components/*"
+      "@/*": [
+        "*"
       ]
     }
   },

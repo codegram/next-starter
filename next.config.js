@@ -22,11 +22,13 @@ const nextConfig = {
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
   },
-  future: {},
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+  images: {
+    loader: 'custom',
+    path: '/',
+    deviceSizes: [320, 480, 768, 1024, 1280, 1440, 1600, 1920, 2048],
+    imageSizes: [320, 480, 768, 1024, 1280, 1440, 1600, 1920, 2048],
   },
+  future: {},
   sassOptions: {
     prependData: `@import "styles/variables"; @import "styles/mixins";`,
   },
