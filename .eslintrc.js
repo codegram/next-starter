@@ -53,7 +53,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.stories.*'], // Or *.test.js
+      files: ['**/*.stories.*', '**/stories.*'], // Or *.test.js
       rules: {
         'react/jsx-props-no-spreading': 'off',
       },

@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import styles from './Button.module.scss'
+import styles from './index.module.scss'
 
 export interface ButtonProps {
   /**

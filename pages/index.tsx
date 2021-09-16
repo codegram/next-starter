@@ -1,12 +1,11 @@
 import { ReactElement } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
-import { Button } from '@/components'
+import { Button } from '@/components/elements/Button'
 import { attributes, react as HomeContent } from '../content/home.md'
 import styles from './index.module.scss'
 
 export default function Home(): ReactElement {
-  const { title, cats } = attributes
+  const { title, items } = attributes
 
   return (
     <div className={styles.container}>
@@ -24,27 +23,14 @@ export default function Home(): ReactElement {
         <HomeContent />
 
         <ul>
-          {cats.map((cat) => (
-            <li key={cat.name}>
-              <h2>{cat.name}</h2>
-              <p>{cat.description}</p>
+          {items.map((item) => (
+            <li key={item.name}>
+              <h2>{item.name}</h2>
+              <p>{item.description}</p>
             </li>
           ))}
         </ul>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }
