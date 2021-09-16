@@ -27,6 +27,7 @@ module.exports = {
           'warn',
           { minScore: 0.3, aggregationMethod: 'optimistic' },
         ],
+        'image-size-responsive': ['warn', { minScore: 0.9 }],
         'largest-contentful-paint': [
           'warn',
           { minScore: 0.5, aggregationMethod: 'optimistic' },
