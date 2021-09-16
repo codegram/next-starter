@@ -29,8 +29,8 @@ const nextConfig = {
   images: {
     loader: 'custom',
     path: basePath,
-    deviceSizes: [320, 480, 768, 1024, 1280, 1440, 1600, 1920, 2048],
-    imageSizes: [320, 480, 768, 1024, 1280, 1440, 1600, 1920, 2048],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
   future: {},
   sassOptions: {
