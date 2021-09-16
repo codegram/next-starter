@@ -2,7 +2,7 @@ import React from 'react'
 import { render, fireEvent, screen } from '@testing-library/react'
 
 // Components
-import { Button } from './Button'
+import { Button } from './index'
 
 describe('Button', () => {
   it('executes the action when button is click', () => {
