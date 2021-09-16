@@ -17,13 +17,13 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [15]
+        node: [16]
 
     steps:
       - uses: rokroskar/workflow-run-cleanup-action@v0.3.3
         if: "github.ref != 'refs/heads/main'"
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: Checkout 🛎
         uses: actions/checkout@master
