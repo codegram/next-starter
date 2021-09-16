@@ -10,7 +10,7 @@
     "lint:js": "eslint --ignore-path .eslintignore .",
     "lint:style": "stylelint **/*.{scss,css} --ignore-path .gitignore",
     "lint": "npm run lint:js && npm run lint:style",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
     "test:watch": "jest --watch"

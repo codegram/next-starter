@@ -11,7 +11,8 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    '@storybook/addon-a11y'
+    '@storybook/addon-a11y',
+    '@storybook/addon-postcss'
   ],
   webpackFinal: async (config) => {
     config.module.rules.push({
@@ -19,6 +20,16 @@ module.exports = {
       use: ['style-loader', 'css-loader?modules=true', 'sass-loader'],
       include: path.resolve(__dirname, '../'),
     });
+
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"]
+    });
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, '../'),
+    }
 
     return config;
   },
