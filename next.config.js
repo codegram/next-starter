@@ -19,6 +19,7 @@ const nextConfig = {
   /* config options here */
   target: 'serverless',
   distDir: 'dist',
+  baseBath: process.env.BASE_PATH || '/',
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }]
   },
