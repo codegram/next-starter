@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import { viewports } from './viewports'
 
 export const parameters = {
