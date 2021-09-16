@@ -22,7 +22,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
-    'next',
+    'next/core-web-vitals',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
