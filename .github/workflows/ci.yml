@@ -49,15 +49,5 @@ jobs:
       - name: Build ⚙️
         run: npm run build
 
-      - name: Build storybook 📖
-        run: npm run build-storybook
-
-      - name: Deploy storybook 📕
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
-        with:
-          github_token: ${{ secrets.GH_PAGES_DEPLOY_TOKEN }}
-          publish_dir: ./storybook-static
-
       - name: Run Unit Tests 🧪
         run: npm run test
