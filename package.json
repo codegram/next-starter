@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^3.9.0",
-    "@testing-library/react": "^12.1.1",
+    "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
