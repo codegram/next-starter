@@ -68,7 +68,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "frontmatter-markdown-loader": "^3.6.3",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.4.7",
+    "jest": "^27.5.1",
     "prettier": "^2.5.1",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
