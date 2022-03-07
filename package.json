@@ -76,7 +76,7 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.21.0",
-    "ts-node": "^10.6.0",
+    "ts-node": "^10.7.0",
     "typescript-eslint": "*"
   }
 }
