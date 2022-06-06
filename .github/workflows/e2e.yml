@@ -63,21 +63,21 @@ jobs:
 
       - name: Upload artifacts (screenshots) 📸
         if: ${{ always() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: cypress screenshots
           path: e2e/cypress/screenshots/
 
       - name: Upload artifacts (videos) 📹
         if: ${{ always() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: cypress videos
           path: e2e/cypress/videos/
 
       - name: Upload artifacts (downloads) 📥
         if: ${{ always() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: cypress downloads
           path: e2e/cypress/downloads/
