@@ -52,7 +52,7 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^3.9.2",
     "@testing-library/react": "^12.1.5",
-    "@types/jest": "^27.4.1",
+    "@types/jest": "^28.1.1",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "babel-jest": "^27.4.4",
@@ -68,7 +68,7 @@
     "eslint-plugin-react-hooks": "^4.4.0",
     "frontmatter-markdown-loader": "^3.7.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.5.1",
+    "jest": "^28.1.1",
     "prettier": "^2.6.2",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
