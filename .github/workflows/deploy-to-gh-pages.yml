@@ -48,7 +48,7 @@ jobs:
         run: npm run export
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4.3.4
         if: github.ref == 'refs/heads/main'
         with:
           branch: gh-pages
